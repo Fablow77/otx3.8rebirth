@@ -1,0 +1,2 @@
+# otx3.8rebirth
+[OTX 3.8 - 8.60] OTX Server with REBIRTH, LOOT/TASK CHANNEL, AUTOLOOT, &amp; DAILY TASKS.
