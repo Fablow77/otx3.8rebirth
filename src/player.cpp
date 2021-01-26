@@ -84,11 +84,11 @@ void Player::doReborn() // rebirth
 	bonusRebirth /= 100;
 	bonusRebirth += 1;
 
-	mana = 35 * bonusRebirth;
+	mana = 90 * bonusRebirth;
 	manaMax = mana;
-	health = 180 * bonusRebirth;
+	health = 185 * bonusRebirth;
 	healthMax = health;
-	capacity = 10000;
+	//capacity = 10000;
 	experience = 4200;
 	level = 8;
 	levelPercent = 0;
