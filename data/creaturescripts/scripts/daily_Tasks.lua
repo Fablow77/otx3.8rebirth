@@ -37,7 +37,7 @@ elseif isDOING == 3 then
     end
 elseif isDOING == 4 then
     if monster:lower() == DT_CHOSENTASK_EXPERT:lower() then
-                player:setStorageValue(DT_STORAGES.MEDIUM, KILL_EXPERT + 1)
+                player:setStorageValue(DT_STORAGES.EXPERT, KILL_EXPERT + 1)
         if KILL_EXPERT >= DT_NEEDKILL_EXPERT then
                 player:sendChannelMessage('', '[DAILY TASK] You successully killed '..DT_NEEDKILL_EXPERT..' '..monster..'.', 8, 12)
             else
