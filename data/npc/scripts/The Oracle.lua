@@ -16,12 +16,16 @@ function creatureSayCallback(cid, type, msg)
     if(msgcontains(msg, 'rebirth')) then
         selfSay('Are you ready to be reborn and to start a new life?', cid)
     elseif(msgcontains(msg, 'yes')) then
-        if player:getLevel() >= reblevel then
-            player:doRebirth()
-            player:remove()
+		if(doPlayerRemoveMoney(cid, 2000000)) then
+        	if player:getLevel() >= reblevel then
+            	player:doRebirth()
+            	player:remove()
+				else
+       				selfSay('Come back when you have some money!')
+      		  end  
         else
-            selfSay('Come back when your level is '..reblevel..'.')
-        end          
+           selfSay('Come back when your level is '..reblevel..'.')   
+        end            
     end
 end
 
