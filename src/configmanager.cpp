@@ -29,6 +29,19 @@
 
 extern Game g_game;
 
+float getGlobalFloat(lua_State* L, const char* identifier, const float defaultValue = 0.0f)
+{
+	lua_getglobal(L, identifier);
+	if (!lua_isnumber(L, -1)) {
+		lua_pop(L, 1);
+		return defaultValue;
+	}
+
+	float val = lua_tonumber(L, -1);
+	lua_pop(L, 1);
+	return val;
+}
+
 bool ConfigManager::load()
 {
 	lua_State* L = luaL_newstate();
@@ -121,6 +134,10 @@ bool ConfigManager::load()
 	integer[STAIRHOP_DELAY] = getGlobalNumber(L, "stairJumpExhaustion", 2000);
 	integer[EXP_FROM_PLAYERS_LEVEL_RANGE] = getGlobalNumber(L, "expFromPlayersLevelRange", 75);
 	integer[MAX_PACKETS_PER_SECOND] = getGlobalNumber(L, "maxPacketsPerSecond", 25);
+	
+	floating[MLVL_BONUSDMG] = getGlobalFloat(L, "monsterBonusDamage", 0);
+	floating[MLVL_BONUSSPEED] = getGlobalFloat(L, "monsterBonusSpeed", 0);
+	floating[MLVL_BONUSHP] = getGlobalFloat(L, "monsterBonusHealth", 0);
 
 	loaded = true;
 	lua_close(L);
@@ -205,4 +222,14 @@ bool ConfigManager::getGlobalBoolean(lua_State* L, const char* identifier, const
 	int val = lua_toboolean(L, -1);
 	lua_pop(L, 1);
 	return val != 0;
+}
+
+
+float ConfigManager::getFloat(floating_config_t what) const
+{
+	if (what >= LAST_FLOATING_CONFIG) {
+		std::cout << "[Warning - ConfigManager::getFloat] Accessing invalid index: " << what << std::endl;
+		return 0.0f;
+	}
+	return floating[what];
 }
