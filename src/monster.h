@@ -74,7 +74,7 @@ class Monster final : public Creature
 			return mType->nameDescription;
 		}
 		std::string getDescription(int32_t) const final {
-			return strDescription + '.';
+			return strDescription + ", it is level " + std::to_string(level) + '.';
 		}
 
 		CreatureType_t getType() const final {
@@ -125,6 +125,10 @@ class Monster final : public Creature
 		}
 		void setSpawn(Spawn* spawn) {
 			this->spawn = spawn;
+		}		
+		
+		int32_t getLevel() const {
+			return level;
 		}
 
 		void onAttackedCreatureDisappear(bool isLogout) final;
