@@ -13,8 +13,13 @@ stairJumpExhaustion = 2 * 1000
 experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
 
+--Monster Levels
+monsterBonusHealth = 0.5
+monsterBonusSpeed = 0.02
+monsterBonusDamage = 0.02
+
 -- Reborn
-rebornLevel = 1400 -- min level to reborn
+rebornLevel = 1400 -- min level to reborn // should match with NPC
 rebornStats = 5 -- % more hp and mp on every reset ()
 rebornDmg = 10 -- % attack bonus per reborn. 10 = 1%, 100 = 10%, 1000 = 100%. accumulative, keep it low!!!! 
 
