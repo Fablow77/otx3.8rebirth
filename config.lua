@@ -37,7 +37,7 @@ allowClones = false
 serverName = "Forgotten"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
-maxPacketsPerSecond = 25
+maxPacketsPerSecond = 50
 
 -- Version Manual
 clientVersionMin = 860
