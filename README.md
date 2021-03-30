@@ -5,6 +5,10 @@ C++ Edits:
     Beds can be used by non-premium players (Fablow)
     Rebirth System (Stellow)
     Loot Channel (cbrm)
+	Fixed Delay in onWalk
+	Monster Levels
+	
+	
 
 LUA:
 
@@ -14,6 +18,10 @@ LUA:
     The Oracle (NPC - Shadow_)
     Daily Task (adric)
     Grizzly Adams (Darkhaos)
+	Rotworm.xml has example of monster levels
+	
+Check out the releases:
+https://github.com/Fablow77/otx3.8rebirth/releases
 
 Forked from: https://github.com/mattyx14/otxserver/releases/tag/otxv3_8
 
