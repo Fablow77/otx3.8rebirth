@@ -15,10 +15,11 @@ LUA:
     Task Channel (Fablow)
     Autoloot System (Printer)
     Achievements (Darkhaos)
-    The Oracle (NPC - Shadow_)
+    The Oracle (NPC Rebirth - Shadow_)
     Daily Task (adric)
     Grizzly Adams (Darkhaos)
-	Rotworm.xml has example of monster levels
+    Rotworm.xml has example of monster levels
+  
 	
 Check out the releases:
 https://github.com/Fablow77/otx3.8rebirth/releases
