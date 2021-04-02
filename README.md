@@ -5,10 +5,11 @@ C++ Edits:
     Beds can be used by non-premium players (Fablow)
     Rebirth System (Stellow)
     Loot Channel (cbrm)
-    Fixed Delay in onWalk
+    Fixed Delay in onWalk (OTX Branch)
     Monster Levels
-    Creature walkOnFields
-    Quiver for Paladins (any container)
+    Creature walkOnFields (TFS Branch / Ralke)
+    Quiver for Paladins (xydius)
+    Battlefield (https://otland.net/threads/tfs-1-x-battlefield-event-4-teams-version.270998/)
 	
 	
 	
@@ -22,6 +23,8 @@ LUA:
     Daily Task (adric)
     Grizzly Adams (Darkhaos)
     Rotworm.xml has example of monster levels
+    Paladin Quiver can be used with any container
+    Creature walkOnFields tags (fire, poison, energy)
   
 	
 Check out the releases:
