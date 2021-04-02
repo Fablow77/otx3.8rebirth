@@ -7,7 +7,7 @@ C++ Edits:
     Loot Channel (cbrm)
     Fixed Delay in onWalk (OTX Branch)
     Monster Levels (Infernum)
-    Creature walkOnFields (TFS Branch / Ralke)
+    Creature walkOnFields (TFS Branch)
     Quiver for Paladins (xydius)
     Battlefield ( https://otland.net/threads/tfs-1-x-battlefield-event-4-teams-version.270998/ )
 	
@@ -25,6 +25,7 @@ LUA:
     Rotworm.xml has example of monster levels
     Paladin Quiver can be used with any container
     Creature walkOnFields tags (fire, poison, energy)
+    No bag drop from Creatures (Fablow)
   
 	
 Check out the releases:
