@@ -130,6 +130,8 @@ class Monster final : public Creature
 		int32_t getLevel() const {
 			return level;
 		}
+		
+		bool canWalkOnFieldType(CombatType_t combatType) const;
 
 		void onAttackedCreatureDisappear(bool isLogout) final;
 
@@ -176,6 +178,9 @@ class Monster final : public Creature
 		bool isTargetNearby() const {
 			return stepDuration >= 1;
 		}
+		bool isIgnoringFieldDamage() const {
+			return ignoreFieldDamage;
+		}
 
 		BlockType_t blockHit(Creature* attacker, CombatType_t combatType, int32_t& damage,
 		                     bool checkDefense = false, bool checkArmor = false, bool field = false);
@@ -208,6 +213,8 @@ class Monster final : public Creature
 		bool isIdle = true;
 		bool extraMeleeAttack = false;
 		bool isMasterInRange = false;
+		bool randomStepping = false;
+		bool ignoreFieldDamage = false;
 
 		void onCreatureEnter(Creature* creature);
 		void onCreatureLeave(Creature* creature);
@@ -273,7 +280,7 @@ class Monster final : public Creature
 		}
 		void getPathSearchParams(const Creature* creature, FindPathParams& fpp) const final;
 		bool useCacheMap() const final {
-			return true;
+			return !randomStepping;
 		}
 
 		friend class LuaScriptInterface;
