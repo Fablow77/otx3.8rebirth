@@ -8,6 +8,7 @@ C++ Edits:
     Fixed Delay in onWalk
     Monster Levels
     Creature walkOnFields
+    Quiver for Paladins (any container)
 	
 	
 	
