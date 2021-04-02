@@ -6,7 +6,7 @@ C++ Edits:
     Rebirth System (Stellow)
     Loot Channel (cbrm)
     Fixed Delay in onWalk (OTX Branch)
-    Monster Levels
+    Monster Levels (Infernum)
     Creature walkOnFields (TFS Branch / Ralke)
     Quiver for Paladins (xydius)
     Battlefield ( https://otland.net/threads/tfs-1-x-battlefield-event-4-teams-version.270998/ )
