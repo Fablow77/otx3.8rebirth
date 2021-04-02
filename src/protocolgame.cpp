@@ -2073,8 +2073,16 @@ void ProtocolGame::AddPlayerStats(NetworkMessage& msg)
 {
 	msg.addByte(0xA0);
 
-	msg.add<uint16_t>(std::min<int32_t>(player->getHealth(), std::numeric_limits<uint16_t>::max()));
-	msg.add<uint16_t>(std::min<int32_t>(player->getMaxHealth(), std::numeric_limits<uint16_t>::max()));
+	if (player->getMaxHealth() > 0)
+   	{
+        msg.add<uint16_t>(std::min<int32_t>(player->getHealth() * 100 / player->getMaxHealth(), std::numeric_limits<uint16_t>::max()));
+        msg.add<uint16_t>(100);
+ 	}
+   	else
+   	{
+        msg.add<uint16_t>(0);
+        msg.add<uint16_t>(0);
+    	}
 
 	msg.add<uint32_t>(player->getFreeCapacity());
 
@@ -2083,8 +2091,16 @@ void ProtocolGame::AddPlayerStats(NetworkMessage& msg)
 	msg.add<uint16_t>(player->getLevel());
 	msg.addByte(player->getLevelPercent());
 
-	msg.add<uint16_t>(std::min<int32_t>(player->getMana(), std::numeric_limits<uint16_t>::max()));
-	msg.add<uint16_t>(std::min<int32_t>(player->getMaxMana(), std::numeric_limits<uint16_t>::max()));
+	if (player->getMaxMana() > 0)
+  	{
+        msg.add<uint16_t>(std::min<int32_t>(player->getMana() * 100 / player->getMaxMana(), std::numeric_limits<uint16_t>::max()));
+        msg.add<uint16_t>(100);
+        }
+        else
+    	{
+        msg.add<uint16_t>(0);
+        msg.add<uint16_t>(0);
+  	}
 
 	msg.addByte(std::min<uint32_t>(player->getMagicLevel(), std::numeric_limits<uint8_t>::max()));
 	msg.addByte(player->getMagicLevelPercent());
