@@ -16,7 +16,10 @@
 		<flag targetdistance="1"/>
 		<flag staticattack="90"/>
 		<flag runonhealth="0"/>
-	</flags>
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>	
 	<attacks>
 		<attack name="melee" interval="2000" skill="90" attack="200" poison="65"/>
 		<attack name="lifedrain" interval="3000" chance="7" range="1" min="-55" max="-550"/>
