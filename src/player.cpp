@@ -3637,6 +3637,12 @@ bool Player::canWear(uint32_t lookType, uint8_t addons) const
 	if (outfit->premium && !isPremium()) {
 		return false;
 	}
+	
+	int32_t value;
+	if (getStorageValue(81723, value)) {
+		sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot change your outfit inside the Battlefield.");
+		return false;
+	}
 
 	if (outfit->unlocked && addons == 0) {
 		return true;
