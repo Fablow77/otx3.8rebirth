@@ -5,8 +5,10 @@ C++ Edits:
     Beds can be used by non-premium players (Fablow)
     Rebirth System (Stellow)
     Loot Channel (cbrm)
-	Fixed Delay in onWalk
-	Monster Levels
+    Fixed Delay in onWalk
+    Monster Levels
+    Creature walkOnFields
+	
 	
 	
 
