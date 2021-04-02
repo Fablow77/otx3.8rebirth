@@ -78,7 +78,7 @@ freePremium = false
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
 emoteSpells = true
-classicEquipmentSlots = false
+classicEquipmentSlots = true --This needs to be true for Paladin Quiver.
 allowWalkthrough = true
 
 -- Rates
