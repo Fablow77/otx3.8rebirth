@@ -13,6 +13,8 @@
 		<flag canpushitems="1"/>
 		<flag targetdistance="1"/>
 		<flag runonhealth="100"/>
+		<flag canwalkonenergy="0" />
+		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="60"/>
