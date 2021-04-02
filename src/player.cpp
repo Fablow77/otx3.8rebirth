@@ -241,6 +241,25 @@ Item* Player::getWeapon(slots_t slot, bool ignoreAmmo) const
 		const ItemType& it = Item::items[item->getID()];
 		if (it.ammoType != AMMO_NONE) {
 			Item* ammoItem = inventory[CONST_SLOT_AMMO];
+			/*edit for quiver*/
+			if (!ammoItem)
+			{
+				return nullptr;
+			}
+
+			if (Container* container = ammoItem->getContainer())
+			{
+				for (ContainerIterator iter = container->iterator(); iter.hasNext(); iter.advance())
+				{
+					const ItemType& itr = Item::items[(*iter)->getID()];
+					if (itr.ammoType == it.ammoType)
+					{
+						item = (*iter);
+						return item;
+					}
+				}
+			}
+			/*end of edit*/
 			if (!ammoItem || ammoItem->getAmmoType() != it.ammoType) {
 				return nullptr;
 			}
