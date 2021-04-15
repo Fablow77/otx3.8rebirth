@@ -20,13 +20,13 @@
 #ifndef FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 #define FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 
-static constexpr auto STATUS_SERVER_NAME = "OTX Server";
-static constexpr auto STATUS_SERVER_VERSION = "3";
-static constexpr auto MINOR_VERSION = "8";
-static constexpr auto REVISION_VERSION = "868";
-static constexpr auto SOFTWARE_CODENAME = "LEZICK";
-static constexpr auto STATUS_SERVER_DEVELOPERS = "Mattyx14, Brewsterl, Malucooo and The Forgotten Server Developers";
-static constexpr auto GIT_REPO = "https://github.com/mattyx14/otxserver/tree/otxserv3/";
+static constexpr auto STATUS_SERVER_NAME = "OTX Server Rebirth";
+static constexpr auto STATUS_SERVER_VERSION = "1";
+static constexpr auto MINOR_VERSION = "5";
+static constexpr auto REVISION_VERSION = "666";
+static constexpr auto SOFTWARE_CODENAME = "Devils Lettuce";
+static constexpr auto STATUS_SERVER_DEVELOPERS = "Mattyx14, Brewsterl, Malucooo, The Forgotten Server Developers and all contributors!";
+static constexpr auto GIT_REPO = "https://github.com/Fablow77/otx3.8rebirth/";
 
 static constexpr auto CLIENT_VERSION_MIN = 860;
 static constexpr auto CLIENT_VERSION_MAX = 860;
