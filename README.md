@@ -1,4 +1,4 @@
-# otx3.8rebirth
+# otx3.8rebirth ( 1.5 "Devils Lettuce" )
 
 C++ Edits:
 
