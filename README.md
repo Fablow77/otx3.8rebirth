@@ -10,6 +10,8 @@ C++ Edits:
     Creature walkOnFields (TFS Branch)
     Quiver for Paladins (xydius)
     Battlefield ( https://otland.net/threads/tfs-1-x-battlefield-event-4-teams-version.270998/ )
+    Optimized Pathfinding (Flatlander)
+    Fix Sight Line for players/monsters (zbizu)
 	
 	
 	
