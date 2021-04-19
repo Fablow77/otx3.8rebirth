@@ -1,5 +1,9 @@
 # otx3.8rebirth ( 1.5 "Devils Lettuce" )
 
+Znote Acc 1.5 (rebirth edition): https://github.com/Fablow77/znoteacc-rebirth
+	
+Check out the releases: https://github.com/Fablow77/otx3.8rebirth/releases
+
 C++ Edits:
 
     Beds can be used by non-premium players (Fablow)
@@ -28,12 +32,7 @@ LUA:
     Paladin Quiver can be used with any container
     Creature walkOnFields tags (fire, poison, energy)
     No bag drop from Creatures (Fablow)
-  
-	
-Check out the releases:
-https://github.com/Fablow77/otx3.8rebirth/releases
 
 Forked from: https://github.com/mattyx14/otxserver/releases/tag/otxv3_8
-
 
 Compiling Tutorial: https://github.com/mattyx14/otxserver/wiki/Compilling-on-Windows
