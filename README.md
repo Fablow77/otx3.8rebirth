@@ -4,6 +4,8 @@ Znote Acc 1.5 (rebirth edition): https://github.com/Fablow77/znoteacc-rebirth
 	
 Check out the releases: https://github.com/Fablow77/otx3.8rebirth/releases
 
+Extended Library Code: https://github.com/SaiyansKing/Tibia-Extended-Client-Library
+
 C++ Edits:
 
     Beds can be used by non-premium players (Fablow)
